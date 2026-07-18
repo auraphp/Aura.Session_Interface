@@ -1,0 +1,37 @@
+{
+    "name": "aura/session-interface",
+    "type": "library",
+    "description": "Light-weight interfaces for session managers and session segments, shared by Aura.Session, Aura.Auth, and any other package that needs to work with a session.",
+    "keywords": [
+        "session",
+        "sessions",
+        "segment",
+        "flash",
+        "interface"
+    ],
+    "homepage": "https://github.com/auraphp/Aura.Session_Interface",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aura.Session_Interface Contributors",
+            "homepage": "https://github.com/auraphp/Aura.Session_Interface/contributors"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aura\\Session_Interface\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aura\\Session_Interface\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
