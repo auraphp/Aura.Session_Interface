@@ -48,6 +48,16 @@ interface FlashSegmentInterface
 
     /**
      *
+     * Gets all the flash values for the *current* request.
+     *
+     * @return array All the flash values for the current request; empty when
+     * there are none.
+     *
+     */
+    public function getFlashAll(): array;
+
+    /**
+     *
      * Clears flash values for *only* the next request.
      *
      * @return null
@@ -67,6 +77,16 @@ interface FlashSegmentInterface
      *
      */
     public function getFlashNext(string $key, mixed $alt = null): mixed;
+
+    /**
+     *
+     * Gets all the flash values for the *next* request.
+     *
+     * @return array All the flash values for the next request; empty when
+     * there are none.
+     *
+     */
+    public function getFlashNextAll(): array;
 
     /**
      *

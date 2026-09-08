@@ -42,8 +42,10 @@ class InterfaceContractTest extends TestCase
         FlashSegmentInterface::class => [
             'setFlash' => 'void',
             'getFlash' => 'mixed',
+            'getFlashAll' => 'array',
             'clearFlash' => 'void',
             'getFlashNext' => 'mixed',
+            'getFlashNextAll' => 'array',
             'setFlashNow' => 'void',
             'clearFlashNow' => 'void',
             'keepFlash' => 'void',
@@ -114,8 +116,10 @@ class InterfaceContractTest extends TestCase
             public function remove(?string $key = null): void { $key === null ? $this->data = [] : $this->data[$key] = null; }
             public function setFlash(string $key, mixed $val): void {}
             public function getFlash(string $key, mixed $alt = null): mixed { return $alt; }
+            public function getFlashAll(): array { return []; }
             public function clearFlash(): void {}
             public function getFlashNext(string $key, mixed $alt = null): mixed { return $alt; }
+            public function getFlashNextAll(): array { return []; }
             public function setFlashNow(string $key, mixed $val): void {}
             public function clearFlashNow(): void {}
             public function keepFlash(): void {}
