@@ -18,7 +18,7 @@ They are used by:
 composer require aura/session-interface
 ```
 
-This package has no dependencies other than PHP `^8.1`.
+This package has no dependencies other than PHP `^8.4`.
 
 ## Interfaces
 

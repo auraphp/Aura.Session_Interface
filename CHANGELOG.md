@@ -11,4 +11,4 @@ Initial release.
 
 These interfaces are shared by `aura/session` (the full implementation) and
 `aura/auth` (which needs only a light session); both depend on `^7.0`. PHP
-8.1+ is required.
+8.4+ is required.
