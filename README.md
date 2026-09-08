@@ -58,8 +58,13 @@ The contract for managing a segment as a whole:
 ### `Aura\Session_Interface\FlashSegmentInterface`
 
 The contract for "flash" values (available for the next request, and/or the
-current one): `setFlash()`, `getFlash()`, `clearFlash()`, `getFlashNext()`,
-`setFlashNow()`, `clearFlashNow()`, and `keepFlash()`.
+current one): `setFlash()`, `getFlash()`, `getFlashAll()`, `clearFlash()`,
+`getFlashNext()`, `getFlashNextAll()`, `setFlashNow()`, `clearFlashNow()`, and
+`keepFlash()`.
+
+The two all-getters return every flash value for the current or the next
+request, so a consumer can render them without knowing the keys in advance;
+both return an empty array when there is nothing set.
 
 Each of these is a separate interface so that consumers that only read and
 write plain values do not have to depend on whole-segment management or flash
