@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 6.0.0
+## 7.0.0
 
 Initial release.
 
@@ -10,5 +10,5 @@ Initial release.
 - (ADD) `Aura\Session_Interface\FlashSegmentInterface` — flash values: `setFlash()`, `getFlash()`, `clearFlash()`, `getFlashNext()`, `setFlashNow()`, `clearFlashNow()`, `keepFlash()`.
 
 These interfaces are shared by `aura/session` (the full implementation) and
-`aura/auth` (which needs only a light session); both depend on `^6.0`. PHP
-8.1+ is required.
+`aura/auth` (which needs only a light session); both depend on `^7.0`. PHP
+8.4+ is required.
